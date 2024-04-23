@@ -1,0 +1,87 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-image: url('https://res.cloudinary.com/dzajrh9z7/image/upload/v1713902141/dev_setups/ddw5gfqc47hqj49imi6z.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.form {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  z-index: 1;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 300px;
+}
+.formGroup label {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: bold;
+  font-weight: 300px;
+  color: #fff;
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.formGroup label:hover {
+  transform: translateY(0px);
+}
+.formGroup input {
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid#fff;
+  padding: 5px 0;
+  color: #fff;
+}
+.formGroup input:focus {
+  outline: none;
+}
+.btn {
+  text-transform: uppercase;
+  padding: 5px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .form {
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+}
+@media (max-width: 600px) {
+  .form {
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+  }
+}
